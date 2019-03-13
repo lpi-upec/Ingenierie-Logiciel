@@ -18,7 +18,7 @@
             <normesISBN>
                 <norme></norme>
             </normesISBN>
-            <avis_personnel></avis_personnel>
+            <avis_personnel mandatory="False"></avis_personnel>
         </livre>
     </livres>
     <articles>
@@ -33,7 +33,7 @@
                 <annee></annee>
                 <num_journal></num_journal>
             </ref>
-            <avis_personnel></avis_personnel>
+            <avis_personnel mandatory="False"></avis_personnel>
         </article>
     </articles>
 </bibliographie>
