@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+<?xml-stylesheet type="text/xsl" href="Transformation.xslt" ?>
+-->
+ <ventes>
+  <description>
+      Ce document récapitule les ventes de matériel dans les principaux
+      magasins du groupe en 2005 et en 2006.
+      Il est organisé par magasins.
+  </description>
+
+  <magasin nom="Paris" region="Ile-de-France">
+    <description>Le magasin parisien a une nouvelle équipe à sa tête.</description>
+    <trimestre numero="1" annee="2005">
+        <article ref="disque dur"><qte>60</qte><pu>60.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3000.00</pu></article>
+        <article ref="écran"><qte>3</qte><pu>630</pu></article>
+        <article ref="clef USB"><qte>300</qte><pu>20</pu></article>
+    </trimestre>
+    <trimestre numero="2" annee="2005">
+        <article ref="disque dur"><qte>38</qte><pu>65.00</pu></article>
+        <article ref="serveur"><qte>3</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>6</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="3" annee="2005">
+        <article ref="disque dur"><qte>14</qte><pu>65.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>2</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="4" annee="2005">
+        <article ref="disque dur"><qte>78</qte><pu>65.00</pu></article>
+        <article ref="écran"><qte>3</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="1" annee="2006">
+        <article ref="disque dur"><qte>90</qte><pu>65.00</pu></article>
+        <article ref="serveur"><qte>2</qte><pu>3000.00</pu></article>
+        <article ref="écran"><qte>4</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="2" annee="2006">
+        <article ref="disque dur"><qte>40</qte><pu>70.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>6</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="3" annee="2006">
+        <article ref="disque dur"><qte>20</qte><pu>70.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>2</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="4" annee="2006">
+        <article ref="disque dur"><qte>85</qte><pu>70.00</pu></article>
+        <article ref="écran"><qte>3</qte><pu>630</pu></article>
+    </trimestre>
+  </magasin>
+
+  <magasin nom="Dijon" region="Bourgogne">
+    <description>
+    On peut mettre une description dans un élément description ou directement
+    sous forme de noeud de texte dans l'élément magasin.
+    Attention, ce magasin a ouvert au deuxième trimestre...
+    </description>
+    <trimestre numero="2" annee="2005">
+        <article ref="disque dur"><qte>38</qte><pu>65.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>6</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="3" annee="2005">
+        <description>Ici aussi on peut mettre une description.</description>
+        <article ref="disque dur"><qte>14</qte><pu>65.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>2</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="4" annee="2005">
+        <article ref="disque dur"><qte>78</qte><pu>65.00</pu></article>
+        <article ref="écran"><qte>3</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="1" annee="2006">
+        <article ref="disque dur"><qte>110</qte><pu>65.00</pu></article>
+        <article ref="serveur"><qte>2</qte><pu>3000.00</pu></article>
+        <article ref="écran"><qte>4</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="2" annee="2006">
+        <article ref="disque dur"><qte>40</qte><pu>70.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>6</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="3" annee="2006">
+        <article ref="disque dur"><qte>20</qte><pu>70.00</pu></article>
+        <article ref="serveur"><qte>1</qte><pu>3120.00</pu></article>
+        <article ref="écran"><qte>2</qte><pu>630</pu></article>
+    </trimestre>
+    <trimestre numero="4" annee="2006">
+        <article ref="disque dur"><qte>85</qte><pu>70.00</pu></article>
+        <article ref="écran"><qte>3</qte><pu>630</pu></article>
+    </trimestre>
+  </magasin>
+
+</ventes>
