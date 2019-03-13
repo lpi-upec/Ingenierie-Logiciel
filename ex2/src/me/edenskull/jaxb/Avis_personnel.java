@@ -2,18 +2,18 @@ package me.edenskull.jaxb;
 
 public class Avis_personnel
 {
-	private String mandatory;
+	private String use;
 
 	private String content;
 
-	public String getMandatory ()
+	public String getUse ()
 	{
-		return mandatory;
+		return use;
 	}
 
-	public void setMandatory (String mandatory)
+	public void setUse (String use)
 	{
-		this.mandatory = mandatory;
+		this.use = use;
 	}
 
 	public String getContent ()
@@ -29,6 +29,6 @@ public class Avis_personnel
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [mandatory = "+mandatory+", content = "+content+"]";
+		return "ClassPojo [use = "+use+", content = "+content+"]";
 	}
 }

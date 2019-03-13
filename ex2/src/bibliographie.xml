@@ -1,41 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <bibliographie>
-    <livres>
-        <livre>
-            <titre>No game No life</titre>
-            <auteurs>
-                <auteur>Kamiya Yuu</auteur>
-            </auteurs>
-            <tomes>
-                <tome page="160">1</tome>
-            </tomes>
-            <edition>
-                <editeur>Ototo</editeur>
-                <adresse>Unknown</adresse>
-            </edition>
-            <impression>
-                <imprimeur>Unknown</imprimeur>
-                <adresse>Unknown</adresse>
-            </impression>
-            <normesISBN>
-                <norme>Unknown</norme>
-            </normesISBN>
-            <avis_personnel mandatory="False"></avis_personnel>
-        </livre>
-    </livres>
-    <articles>
-        <article>
-            <titre>test</titre>
-            <auteurs>
-                <auteur>test</auteur>
-            </auteurs>
-            <ref>
-                <journal>test</journal>
-                <page>1</page>
-                <annee>2019</annee>
-                <num_journal>40894089048</num_journal>
-            </ref>
-            <avis_personnel mandatory="False"></avis_personnel>
-        </article>
-    </articles>
+    <livre>
+        <titre>No game No life</titre>
+        <auteur>Kamiya Yuu</auteur>
+        <tomes>
+            <tome page="160">1</tome>
+        </tomes>
+        <edition name="Ototo" adresse="Japan" impression="Tohei"/>
+        <normesISBN>ISO-841021</normesISBN>
+        <avis_personnel use="optional"/>
+    </livre>
+    <article>
+        <titre>Test</titre>
+        <auteur>test</auteur>
+        <ref journal="test" page="1" annee="2019" num_journal="516841520" />
+        <avis_personnel use="optional" />
+    </article>
 </bibliographie>

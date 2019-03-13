@@ -19,18 +19,17 @@ public class Main {
 
 		 Bibliographie bibliographie = (Bibliographie) decodeur.unmarshal(reader);
 
-		for(Object obj : bibliographie.getLivreOrArticle()) {
-			if (obj instanceof Article) {
-				Article a = (Article) obj;
-				System.out.println(a.getTitre());
-				System.out.println(a.getAuteurs());
-				System.out.println(a.getRef().getJournal());
-			} else if (obj instanceof Livre) {
-				Livre l = (Livre) obj;
-				System.out.println(l.getTitre());
-				System.out.println(l.getAuteurs());
-				System.out.println(l.getEdition().getNom());
-			}
+		for (Object obj : bibliographie.getArticle()) {
+			Article a = (Article) obj;
+			System.out.println(a.getTitre());
+			System.out.println(a.getAuteur());
+			System.out.println(a.getRef().getJournal());
+		}
+		for (Object obj : bibliographie.getLivre()) {
+			Livre l = (Livre) obj;
+			System.out.println(l.getTitre());
+			System.out.println(l.getAuteur());
+			System.out.println(l.getEdition().getName());
 		}
 	}
 

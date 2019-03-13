@@ -4,17 +4,15 @@ public class Livre
 {
 	private Avis_personnel avis_personnel;
 
-	private Auteurs auteurs;
-
 	private String titre;
 
 	private Tomes tomes;
 
-	private NormesISBN normesISBN;
+	private String normesISBN;
 
 	private Edition edition;
 
-	private Impression impression;
+	private String auteur;
 
 	public Avis_personnel getAvis_personnel ()
 	{
@@ -24,16 +22,6 @@ public class Livre
 	public void setAvis_personnel (Avis_personnel avis_personnel)
 	{
 		this.avis_personnel = avis_personnel;
-	}
-
-	public Auteurs getAuteurs ()
-	{
-		return auteurs;
-	}
-
-	public void setAuteurs (Auteurs auteurs)
-	{
-		this.auteurs = auteurs;
 	}
 
 	public String getTitre ()
@@ -56,12 +44,12 @@ public class Livre
 		this.tomes = tomes;
 	}
 
-	public NormesISBN getNormesISBN ()
+	public String getNormesISBN ()
 	{
 		return normesISBN;
 	}
 
-	public void setNormesISBN (NormesISBN normesISBN)
+	public void setNormesISBN (String normesISBN)
 	{
 		this.normesISBN = normesISBN;
 	}
@@ -76,19 +64,19 @@ public class Livre
 		this.edition = edition;
 	}
 
-	public Impression getImpression ()
+	public String getAuteur ()
 	{
-		return impression;
+		return auteur;
 	}
 
-	public void setImpression (Impression impression)
+	public void setAuteur (String auteur)
 	{
-		this.impression = impression;
+		this.auteur = auteur;
 	}
 
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [avis_personnel = "+avis_personnel+", auteurs = "+auteurs+", titre = "+titre+", tomes = "+tomes+", normesISBN = "+normesISBN+", edition = "+edition+", impression = "+impression+"]";
+		return "ClassPojo [avis_personnel = "+avis_personnel+", titre = "+titre+", tomes = "+tomes+", normesISBN = "+normesISBN+", edition = "+edition+", auteur = "+auteur+"]";
 	}
 }

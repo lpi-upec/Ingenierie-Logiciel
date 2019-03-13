@@ -2,33 +2,33 @@ package me.edenskull.jaxb;
 
 public class Bibliographie
 {
-	private Livres livres;
+	private Article article;
 
-	private Articles articles;
+	private Livre livre;
 
-	public Livres getLivres ()
+	public Article getArticle ()
 	{
-		return livres;
+		return article;
 	}
 
-	public void setLivres (Livres livres)
+	public void setArticle (Article article)
 	{
-		this.livres = livres;
+		this.article = article;
 	}
 
-	public Articles getArticles ()
+	public Livre getLivre ()
 	{
-		return articles;
+		return livre;
 	}
 
-	public void setArticles (Articles articles)
+	public void setLivre (Livre livre)
 	{
-		this.articles = articles;
+		this.livre = livre;
 	}
 
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [livres = "+livres+", articles = "+articles+"]";
+		return "ClassPojo [article = "+article+", livre = "+livre+"]";
 	}
 }

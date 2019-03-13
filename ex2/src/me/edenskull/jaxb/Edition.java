@@ -2,9 +2,23 @@ package me.edenskull.jaxb;
 
 public class Edition
 {
+	private String name;
+
 	private String adresse;
 
-	private String editeur;
+	private String impression;
+
+	private String content;
+
+	public String getName ()
+	{
+		return name;
+	}
+
+	public void setName (String name)
+	{
+		this.name = name;
+	}
 
 	public String getAdresse ()
 	{
@@ -16,19 +30,29 @@ public class Edition
 		this.adresse = adresse;
 	}
 
-	public String getEditeur ()
+	public String getImpression ()
 	{
-		return editeur;
+		return impression;
 	}
 
-	public void setEditeur (String editeur)
+	public void setImpression (String impression)
 	{
-		this.editeur = editeur;
+		this.impression = impression;
+	}
+
+	public String getContent ()
+	{
+		return content;
+	}
+
+	public void setContent (String content)
+	{
+		this.content = content;
 	}
 
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [adresse = "+adresse+", editeur = "+editeur+"]";
+		return "ClassPojo [name = "+name+", adresse = "+adresse+", impression = "+impression+", content = "+content+"]";
 	}
 }

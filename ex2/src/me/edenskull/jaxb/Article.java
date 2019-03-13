@@ -6,9 +6,9 @@ public class Article
 
 	private Avis_personnel avis_personnel;
 
-	private Auteurs auteurs;
-
 	private String titre;
+
+	private String auteur;
 
 	public Ref getRef ()
 	{
@@ -30,16 +30,6 @@ public class Article
 		this.avis_personnel = avis_personnel;
 	}
 
-	public Auteurs getAuteurs ()
-	{
-		return auteurs;
-	}
-
-	public void setAuteurs (Auteurs auteurs)
-	{
-		this.auteurs = auteurs;
-	}
-
 	public String getTitre ()
 	{
 		return titre;
@@ -50,9 +40,19 @@ public class Article
 		this.titre = titre;
 	}
 
+	public String getAuteur ()
+	{
+		return auteur;
+	}
+
+	public void setAuteur (String auteur)
+	{
+		this.auteur = auteur;
+	}
+
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [ref = "+ref+", avis_personnel = "+avis_personnel+", auteurs = "+auteurs+", titre = "+titre+"]";
+		return "ClassPojo [ref = "+ref+", avis_personnel = "+avis_personnel+", titre = "+titre+", auteur = "+auteur+"]";
 	}
 }

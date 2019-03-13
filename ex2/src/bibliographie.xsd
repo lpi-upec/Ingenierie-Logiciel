@@ -1,95 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="bibliographie" type="bibliographieType"/>
-    <xs:complexType name="auteursType">
-        <xs:sequence>
-            <xs:element name="auteur">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="Kamiya Yuu"/>
-                        <xs:enumeration value="test"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="tomeType">
-        <xs:simpleContent>
-            <xs:extension base="xs:string">
-                <xs:attribute type="xs:string" name="page"/>
-            </xs:extension>
-        </xs:simpleContent>
-    </xs:complexType>
-    <xs:complexType name="tomesType">
-        <xs:sequence>
-            <xs:element type="tomeType" name="tome"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="editionType">
-        <xs:sequence>
-            <xs:element type="xs:string" name="editeur"/>
-            <xs:element type="xs:string" name="adresse"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="impressionType">
-        <xs:sequence>
-            <xs:element type="xs:string" name="imprimeur"/>
-            <xs:element type="xs:string" name="adresse"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="normesISBNType">
-        <xs:sequence>
-            <xs:element type="xs:string" name="norme"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="avis_personnelType">
-        <xs:simpleContent>
-            <xs:extension base="xs:string">
-                <xs:attribute type="xs:string" name="mandatory" use="optional"/>
-            </xs:extension>
-        </xs:simpleContent>
-    </xs:complexType>
-    <xs:complexType name="livreType">
-        <xs:sequence>
-            <xs:element type="xs:string" name="titre"/>
-            <xs:element type="auteursType" name="auteurs"/>
-            <xs:element type="tomesType" name="tomes"/>
-            <xs:element type="editionType" name="edition"/>
-            <xs:element type="impressionType" name="impression"/>
-            <xs:element type="normesISBNType" name="normesISBN"/>
-            <xs:element type="avis_personnelType" name="avis_personnel"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="livresType">
-        <xs:sequence>
-            <xs:element type="livreType" name="livre"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="refType">
-        <xs:sequence>
-            <xs:element type="xs:string" name="journal"/>
-            <xs:element type="xs:string" name="page"/>
-            <xs:element type="xs:string" name="annee"/>
-            <xs:element type="xs:string" name="num_journal"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="articleType">
-        <xs:sequence>
-            <xs:element type="xs:string" name="titre"/>
-            <xs:element type="auteursType" name="auteurs"/>
-            <xs:element type="refType" name="ref"/>
-            <xs:element type="avis_personnelType" name="avis_personnel"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="articlesType">
-        <xs:sequence>
-            <xs:element type="articleType" name="article"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="bibliographieType">
-        <xs:sequence>
-            <xs:element type="livresType" name="livres"/>
-            <xs:element type="articlesType" name="articles"/>
-        </xs:sequence>
-    </xs:complexType>
+  <xs:element name="bibliographie" type="bibliographieType"/>
+  <xs:complexType name="tomeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="page"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="tomesType">
+    <xs:sequence>
+      <xs:element type="tomeType" name="tome"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="editionType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name"/>
+        <xs:attribute type="xs:string" name="adresse"/>
+        <xs:attribute type="xs:string" name="impression"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="avis_personnelType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="use" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="livreType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="titre"/>
+      <xs:element type="xs:string" name="auteur"/>
+      <xs:element type="tomesType" name="tomes"/>
+      <xs:element type="editionType" name="edition"/>
+      <xs:element type="xs:string" name="normesISBN"/>
+      <xs:element type="avis_personnelType" name="avis_personnel"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="refType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="journal"/>
+        <xs:attribute type="xs:string" name="page"/>
+        <xs:attribute type="xs:string" name="annee"/>
+        <xs:attribute type="xs:string" name="num_journal"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="articleType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="titre"/>
+      <xs:element type="xs:string" name="auteur"/>
+      <xs:element type="refType" name="ref"/>
+      <xs:element type="avis_personnelType" name="avis_personnel"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bibliographieType">
+    <xs:sequence>
+      <xs:element type="livreType" name="livre"/>
+      <xs:element type="articleType" name="article"/>
+    </xs:sequence>
+  </xs:complexType>
 </xs:schema>

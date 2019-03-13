@@ -10,6 +10,8 @@ public class Ref
 
 	private String annee;
 
+	private String content;
+
 	public String getJournal ()
 	{
 		return journal;
@@ -50,9 +52,19 @@ public class Ref
 		this.annee = annee;
 	}
 
+	public String getContent ()
+	{
+		return content;
+	}
+
+	public void setContent (String content)
+	{
+		this.content = content;
+	}
+
 	@Override
 	public String toString()
 	{
-		return "ClassPojo [journal = "+journal+", num_journal = "+num_journal+", page = "+page+", annee = "+annee+"]";
+		return "ClassPojo [journal = "+journal+", num_journal = "+num_journal+", page = "+page+", annee = "+annee+", content = "+content+"]";
 	}
 }
