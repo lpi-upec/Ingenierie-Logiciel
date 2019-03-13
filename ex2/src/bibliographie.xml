@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bibliographie>
+    <livres>
+        <livre>
+            <titre>No game No life</titre>
+            <auteurs>
+                <auteur>Kamiya Yuu</auteur>
+            </auteurs>
+            <tomes>
+                <tome page="160">1</tome>
+            </tomes>
+            <edition>
+                <editeur>Ototo</editeur>
+                <adresse>Unknown</adresse>
+            </edition>
+            <impression>
+                <imprimeur>Unknown</imprimeur>
+                <adresse>Unknown</adresse>
+            </impression>
+            <normesISBN>
+                <norme>Unknown</norme>
+            </normesISBN>
+            <avis_personnel mandatory="False"></avis_personnel>
+        </livre>
+    </livres>
+    <articles>
+        <article>
+            <titre>test</titre>
+            <auteurs>
+                <auteur>test</auteur>
+            </auteurs>
+            <ref>
+                <journal>test</journal>
+                <page>1</page>
+                <annee>2019</annee>
+                <num_journal>40894089048</num_journal>
+            </ref>
+            <avis_personnel mandatory="False"></avis_personnel>
+        </article>
+    </articles>
+</bibliographie>
