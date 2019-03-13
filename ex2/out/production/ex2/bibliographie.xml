@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bibliographie>
+    <livre>
+        <titre>No game No life</titre>
+        <auteur>Kamiya Yuu</auteur>
+        <tomes>
+            <tome page="160">1</tome>
+        </tomes>
+        <edition name="Ototo" adresse="Japan" impression="Tohei"/>
+        <normesISBN>ISO-841021</normesISBN>
+        <avis_personnel use="optional"/>
+    </livre>
+    <article>
+        <titre>Test</titre>
+        <auteur>test</auteur>
+        <ref journal="test" page="1" annee="2019" num_journal="516841520" />
+        <avis_personnel use="optional" />
+    </article>
+</bibliographie>

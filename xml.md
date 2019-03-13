@@ -1,6 +1,6 @@
 # HTML/XML
 
-2 dérivés du SGML(langage à balise=meta langage(tags,markup))
+Langages dérivés du `SGML` (Standard Generalized Markup Language) qui est un langage de balisage avec des metadata (tags/markup)
 
 ## Schéma XML
 
@@ -35,3 +35,6 @@ Parcourir l'arborescence :
 * preceding-sibling
 * preceding
 * attribute
+
+`XSL-T` permet de définir des regles de transformation qui seront appliquées par un moteur de regles.  
+Une regle est definie par un chemin dans le flux d'entré qui permet la selection d'un ensemble de noeuds et d'une sequence d'actions à effectuer.  
