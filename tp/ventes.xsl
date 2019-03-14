@@ -38,8 +38,6 @@
             <td bgcolor="yellow" colspan="2" align="center"><xsl:value-of select="@annee"/></td>
         </tr>
 
-        <xsl:variable name="reference" select="./article[1]/@ref"/>
-
         <xsl:variable name="max">
             <xsl:for-each select="./article">
                 <xsl:sort order="descending" data-type="number" select="qte * pu"/>
