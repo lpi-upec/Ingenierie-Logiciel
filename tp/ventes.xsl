@@ -37,8 +37,18 @@
             <td bgcolor="yellow" align="center"><xsl:value-of select="@numero"/></td>
             <td bgcolor="yellow" colspan="2" align="center"><xsl:value-of select="@annee"/></td>
         </tr>
-        <xsl:variable name="max" select="./article[1]/qte * ./article[1]/pu"/>
+
         <xsl:variable name="reference" select="./article[1]/@ref"/>
+
+        <xsl:variable name="max">
+            <xsl:for-each select="./article">
+                <xsl:sort order="descending" data-type="number" select="qte * pu"/>
+                <xsl:if test="position() = 1">
+                    <xsl:value-of select="@ref"/>
+                </xsl:if>
+            </xsl:for-each>
+        </xsl:variable>
+
         <xsl:for-each select="./article">
             <xsl:if test="$max &lt; qte * pu">
                 <xsl:variable name="max" select="qte * pu"/>
@@ -46,7 +56,9 @@
             </xsl:if>
         </xsl:for-each>
         <xsl:apply-templates select="./article">
-            <xsl:with-param name="ref" select="$reference"/>
+            <xsl:with-param name="ref">
+                <xsl:value-of select="$max"/>
+            </xsl:with-param>
         </xsl:apply-templates>
     </xsl:template>
 
